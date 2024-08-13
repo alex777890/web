@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LibroVerse</title>
+    <link rel="stylesheet" href="Pagina LibroVerse.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <img class="logo" src="imagenes de pagina 1/logo_de_libro_verse.png">
+            <h1>LibroVerse</h1>
+            <nav>
+                <ul>    
+                    <li><a href="#">¿Quiénes somos?</a>
+                        <ul>
+                            <li><a href="Pagina de usuario.html">Pagina principal</a></li>  
+                            <li><a href="Pagina de Msion,Vision y Objetivo.html">Visión, Mision y Objetivo</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Servicios</a>
+                        <ul>
+                            <li><a href="#">LibroVerse</a>
+                                <ul>
+                                    <li><a href="https://www.education.com/">Materiales didácticos</a></li>
+                                    <li><a href="Pagina LibroVerse.html">Consulta de libros electrónicos</a></li>
+                                    <li><a href="#">Informática Básica</a>
+                                        <ul>
+                                            <li><a href="https://www.tomshardware.com/">Instalación de PC</a></li>
+                                            <li><a href="https://www.sololearn.com/es/">POO Básica</a></li>
+                                            <li><a href="https://www.netacad.com/">Redes Básicas</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Robótica Básica</a>
+                                        <ul>
+                                            <li><a href="https://www.electronics-tutorials.ws/">Electrónica Básica</a></li>
+                                            <li><a href="https://www.khanacademy.org/science/electrical-engineering">Circuitos</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Ubicación</a>
+                        <ul>
+                            <li><a href="UBICACION.html">Ubicación de la empresa</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Contactos</a>
+                        <ul>
+                            <li><a href="Telefonos y contactos.html">Teléfonos y Contactos</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Atención al usuario</a>
+                        <ul>
+                            <li><a href="Pagina de comentarios.html">Comentarios</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="library">
+    <div class="genre-section" id="ciencia-ficcion">
+    <h4>Ciencia Ficción</h4>
+            <div class="book">
+                <img src="imagenes de libros pdf/P_1.1.png" alt="Portada del libro 1.1" width="400px" height="100%">
+                <div class="book-details">
+                    <h2 class="book-title">Frankenstein</h2>
+                    <p class="book-editorial"><strong>Editorial:</strong>Lackington, Hughes, Harding, Mavor & Jones</p>
+                    <p class="book-year"><strong>Año de Publicación:</strong>1818</p>
+                    <div class="book-actions">
+                        <a href="ciencia ficcion_pdf/Frankenstein o el moderno Prometeo-libro.pdf" target="_blank" class="read-btn">Leer PDF</a>
+                        <form id="download-form-201" method="post" action="descargar.php" target="_blank">
+                            <input type="hidden" name="book_id" value="201">
+                            <button type="submit" class="download-btn" data-pdf-url="ciencia ficcion_pdf/Frankenstein o el moderno Prometeo-libro.pdf">Descargar PDF</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="book">
+                <img src="imagenes de libros pdf/P_1.2.png" alt="Portada del libro 1.2" width="800px" height="100%">
+                <div class="book-details">
+                    <h2 class="book-title">Igualdad</h2>
+                    <p class="book-editorial"><strong>Editorial:</strong>Houghton Mifflin</p>
+                    <p class="book-year"><strong>Año de Publicación:</strong> 1888</p>
+                    <div class="book-actions">
+                        <a href="ciencia ficcion_pdf/Igualdad autor Edward Bellamy.pdf" target="_blank" class="read-btn">Leer PDF</a>
+                        <form id="download-form-202" method="post" action="descargar.php" target="_blank">
+                            <input type="hidden" name="book_id" value="202">
+                            <button type="submit" class="download-btn" data-pdf-url="ciencia ficcion_pdf/Igualdad autor Edward Bellamy.pdf">Descargar PDF</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+    <div class="genre-section" id="terror">
+    <h4>Terror</h4>
+            <div class="book">
+                <img src="imagenes de libros pdf/P_2.1.jpg" alt="Portada del libro 2.1" width="400px" height="100%">
+                <div class="book-details">
+                    <h2 class="book-title">La casa en el confín de la Tierra</h2>
+                    <p class="book-editorial"><strong>Editorial:</strong>Valancourt Books</p>
+                    <p class="book-year"><strong>Año de Publicación:</strong> 1906</p>
+                    <div class="book-actions">
+                        <a href="libros de terror pdf/la-casa-en-el-confin-de-la-tierra-william-hope-hodgson.pdf" target="_blank" class="read-btn">Leer PDF</a>
+                        <form id="download-form-203" method="post" action="descargar.php" target="_blank">
+                            <input type="hidden" name="book_id" value="203">
+                            <button type="submit" class="download-btn" data-pdf-url="libros de terror pdf/la-casa-en-el-confin-de-la-tierra-william-hope-hodgson.pdf">Descargar PDF</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="book">
+                <img src="imagenes de libros pdf/P_2.2.png" alt="Portada del libro 2.2" width="400px" height="100%">
+                <div class="book-details">
+                    <h2 class="book-title">La oscuridad que se cierne</h2>
+                    <p class="book-editorial"><strong>Editorial:</strong>Primera Edición Octubre</p>
+                    <p class="book-year"><strong>Año de Publicación:</strong> 2018</p>
+                    <div class="book-actions">
+                        <a href="libros de terror pdf/LA OSCURIDAD QUE SE CIERNE - FREE VERSION.pdf" target="_blank" class="read-btn">Leer PDF</a>
+                        <form id="download-form-204" method="post" action="descargar.php" target="_blank">
+                            <input type="hidden" name="book_id" value="204">
+                            <button type="submit" class="download-btn" data-pdf-url="libros de terror pdf/la-casa-en-el-confin-de-la-tierra-william-hope-hodgson.pdf">Descargar PDF</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <section id="mi-seccion">        
+    <div class="genre-section" id="educativos">
+        <h4>Educativos</h4>
+            <div class="book">
+                <img src="imagenes de libros pdf/P_3.1.jpg" alt="Portada del libro 3.1" width="400px" height="100%">
+                <div class="book-details">
+                    <h2 class="book-title">Matemáticas I: Álgebra y Geometría</h2>
+                    <p class="book-editorial"><strong>Editorial:</strong>Luis santalo</p>
+                    <p class="book-year"><strong>Año de Publicación:</strong> 2011</p>
+                    <div class="book-actions">
+                        <a href="libros educativos pdf/Matemáticas I Álgebra y Geometría.pdf" target="_blank" class="read-btn">Leer PDF</a>
+                        <form id="download-form-205" method="post" action="descargar.php" target="_blank">
+                            <input type="hidden" name="book_id" value="205">
+                            <button type="submit" class="download-btn" data-pdf-url="libros de terror pdf/la-casa-en-el-confin-de-la-tierra-william-hope-hodgson.pdf">Descargar PDF</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="book">
+                <img src="imagenes de libros pdf/P_3.2.jpg" alt="Portada del libro 3.2" width="400px" height="100%">
+                <div class="book-details">
+                    <h2 class="book-title">Introducción a la Psicología</h2>
+                    <p class="book-editorial"><strong>Editorial:</strong>Duodecima edicion</p>
+                    <p class="book-year"><strong>Año de Publicación:</strong> 2005</p>
+                    <div class="book-actions">
+                        <a href="libros educativos pdf/morris-introduccion-a-la-psicologia.pdf" target="_blank" class="read-btn">Leer PDF</a>
+                        <form id="download-form-206" method="post" action="descargar.php" target="_blank">
+                            <input type="hidden" name="book_id" value="206">
+                            <button type="submit" class="download-btn" data-pdf-url="libros de terror pdf/la-casa-en-el-confin-de-la-tierra-william-hope-hodgson.pdf">Descargar PDF</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="genre-section" id="romance">
+        <h4>Romance</h4>
+            <div class="book">
+                <img src="imagenes de libros pdf/P_4.1.jpg" alt="Portada del libro 4.1"  width="400px" height="100%">
+                <div class="book-details">
+                    <h2 class="book-title">El doncel de don Enrique el doliente</h2>
+                    <p class="book-editorial"><strong>Editorial:</strong>Mariano José de Larra</p>
+                    <p class="book-year"><strong>Año de Publicación:</strong> 1834</p>
+                    <div class="book-actions">
+                        <a href="libros de romance pdf/El doncel de don Enrique el doliente autor Mariano José de Larra.pdf" target="_blank" class="read-btn">Leer PDF</a>
+                        <form id="download-form-207" method="post" action="descargar.php" target="_blank">
+                            <input type="hidden" name="book_id" value="207">
+                            <button type="submit" class="download-btn" data-pdf-url="libros de terror pdf/la-casa-en-el-confin-de-la-tierra-william-hope-hodgson.pdf">Descargar PDF</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="book">
+                <img src="imagenes de libros pdf/P_4.2.jpg" alt="Portada del libro 4.2"  width="400px" height="100%">
+                <div class="book-details">
+                    <h2 class="book-title">La edad de la inocencia</h2>
+                    <p class="book-editorial"><strong>Editorial:</strong>Edith Wharton</p>
+                    <p class="book-year"><strong>Año de Publicación:</strong>1920</p>
+                    <div class="book-actions">
+                        <a href="libros de romance pdf/La edad de la inocencia autor Edith Wharton.pdf" target="_blank" class="read-btn">Leer PDF</a>
+                        <form id="download-form-208" method="post" action="descargar.php" target="_blank">
+                            <input type="hidden" name="book_id" value="208">
+                            <button type="submit" class="download-btn" data-pdf-url="libros de terror pdf/la-casa-en-el-confin-de-la-tierra-william-hope-hodgson.pdf">Descargar PDF</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        <div class="genre-section" id="aventuras">
+        <h4>Aventuras</h4>
+            <div class="book">
+                <img src="imagenes de libros pdf/P_5.1.jpg" alt="Portada del libro 5.1" width="400px" height="100%">
+                <div class="book-details">
+                    <h2 class="book-title">A la Conquista de un Imperio</h2>
+                    <p class="book-editorial"><strong>Editorial:</strong> Editorial del cardo</p>
+                    <p class="book-year"><strong>Año de Publicación:</strong> 2010</p>
+                    <div class="book-actions">
+                        <a href="libros de aventura pdf/A la Conquista de un Imperio autor Emilio Salgari.pdf" target="_blank" class="read-btn">Leer PDF</a>
+                        <form id="download-form-209" method="post" action="descargar.php" target="_blank">
+                            <input type="hidden" name="book_id" value="209">
+                            <button type="submit" class="download-btn" data-pdf-url="libros de terror pdf/la-casa-en-el-confin-de-la-tierra-william-hope-hodgson.pdf">Descargar PDF</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="book">
+                <img src="imagenes de libros pdf/P_5.2.jpg" alt="Portada del libro 5.2" width="400px" height="100%">
+                <div class="book-details">
+                    <h2 class="book-title">El Capitán Tormenta I</h2>
+                    <p class="book-editorial"><strong>Editorial:</strong>Editorial del cardo</p>
+                    <p class="book-year"><strong>Año de Publicación:</strong> 2010</p>
+                    <div class="book-actions">
+                        <a href="libros de aventura pdf/El Capitán Tormenta I autor Emilio Salgari.pdf" target="_blank" class="read-btn">Leer PDF</a>
+                        <form id="download-form-210" method="post" action="descargar.php" target="_blank">
+                            <input type="hidden" name="book_id" value="210">
+                            <button type="submit" class="download-btn" data-pdf-url="libros de terror pdf/la-casa-en-el-confin-de-la-tierra-william-hope-hodgson.pdf">Descargar PDF</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        <div class="genre-section" id="suspenso">
+        <h4>Suspenso</h4>
+                    <div class="book">
+                        <img src="imagenes de libros pdf/P_6.1.webp" alt="Portada del libro 6.1" width="400px" height="100%">
+                        <div class="book-details">
+                            <h2 class="book-title">El Hombre Invisible</h2>
+                            <p class="book-editorial"><strong>Editorial:</strong>Herbert George Wells</p>
+                            <p class="book-year"><strong>Año de Publicación:</strong> 2001</p>
+                            <div class="book-actions">
+                                <a href="libros de suspenso pdf/El hombre invisible autor HG Wells.pdf" target="_blank" class="read-btn">Leer PDF</a>
+                                <form id="download-form-211" method="post" action="descargar.php" target="_blank">
+                                    <input type="hidden" name="book_id" value="211">
+                                    <button type="submit" class="download-btn" data-pdf-url="libros de terror pdf/la-casa-en-el-confin-de-la-tierra-william-hope-hodgson.pdf">Descargar PDF</button>
+                                </form>
+                        </div>
+                    </div>
+                    <div class="book">
+                        <img src="imagenes de libros pdf/P_6.2.webp" alt="Portada del libro 6.2" width="400px" height="100%">
+                        <div class="book-details">
+                            <h2 class="book-title">La Isla del Doctor Moreau</h2>
+                            <p class="book-editorial"><strong>Editorial:</strong>H. G. Wells</p>
+                            <p class="book-year"><strong>Año de Publicación:</strong> 1998</p>
+                            <div class="book-actions">
+                                <a href="libros de suspenso pdf/La isla del doctor Moreau autor H. G. Wells.pdf" target="_blank" class="read-btn">Leer PDF</a>
+                                <form id="download-form-212" method="post" action="descargar.php" target="_blank">
+                                    <input type="hidden" name="book_id" value="212">
+                                    <button type="submit" class="download-btn" data-pdf-url="libros de terror pdf/la-casa-en-el-confin-de-la-tierra-william-hope-hodgson.pdf">Descargar PDF</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>                               
+        </div>
+    </main>
+    <footer>
+        <div class="background-image"></div>
+        <div class="background-text">GRACIAS POR TU PREFERENCIA SOMOS "LIBRO-VERSE".</div>
+    </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            document.querySelectorAll(".download-btn").forEach(function(button) {
+                button.addEventListener("click", function(event) {
+                    event.preventDefault(); // Evita el comportamiento por defecto del botón
+    
+                    var form = this.closest("form");
+                    var bookId = form.querySelector("input[name='book_id']").value;
+                    var pdfUrl = this.getAttribute("data-pdf-url");
+    
+                    if (bookId) {
+                        // Realiza una solicitud AJAX para registrar la descarga
+                        var xhr = new XMLHttpRequest();
+                        xhr.open("POST", "descargar.php", true);
+                        xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+                        xhr.send("book_id=" + bookId);
+    
+                        // Descarga el PDF
+                        var link = document.createElement('a');
+                        link.href = pdfUrl;
+                        link.download = pdfUrl.split('/').pop(); // Nombre del archivo PDF
+                        document.body.appendChild(link);
+                        link.click();
+                        document.body.removeChild(link);
+                    } else {
+                        alert("ID de libro no proporcionado.");
+                    }
+                });
+            });
+        });
+    </script>    
+</body>
+</html>

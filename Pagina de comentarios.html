@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LibroVerse</title>
+    <link rel="stylesheet" href="Pagina de comentarios.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <img class="logo" src="imagenes de pagina 1/logo_de_libro_verse.png">
+            <h1>LibroVerse</h1>
+            <nav>
+                <ul>    
+                    <li><a href="#">¿Quiénes somos?</a>
+                        <ul>
+                            <li><a href="Pagina de usuario.html">Pagina principal</a></li> 
+                            <li><a href="Pagina de Msion,Vision y Objetivo.html">Visión, Mision y Objetivo</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Servicios</a>
+                        <ul>
+                            <li><a href="#">LibroVerse</a>
+                                <ul>
+                                    <li><a href="https://www.education.com/">Materiales didácticos</a></li>
+                                    <li><a href="Pagina LibroVerse.html">Consulta de libros electrónicos</a></li>
+                                    <li><a href="#">Informática Básica</a>
+                                        <ul>
+                                            <li><a href="https://www.tomshardware.com/">Instalación de PC</a></li>
+                                            <li><a href="https://www.sololearn.com/es/">POO Básica</a></li>
+                                            <li><a href="https://www.netacad.com/">Redes Básicas</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Robótica Básica</a>
+                                        <ul>
+                                            <li><a href="https://www.electronics-tutorials.ws/">Electrónica Básica</a></li>
+                                            <li><a href="https://www.khanacademy.org/science/electrical-engineering">Circuitos</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Ubicación</a>
+                        <ul>
+                            <li><a href="UBICACION.html">Ubicación de la empresa</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Contactos</a>
+                        <ul>
+                            <li><a href="Telefonos y contactos.html">Teléfonos y Contactos</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Atención al usuario</a>
+                        <ul>
+                            <li><a href="#">Comentarios</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="comentarios">
+            <h2>Deja tu comentario</h2>
+            <form id="comentario-form" action="guardar_comentario.php" method="POST">
+                <label for="comentario">Comentario:</label><br>
+                <textarea id="comentario" name="comentario" rows="5" cols="40" required></textarea><br><br>
+                
+                <input type="submit" value="Enviar comentario">
+            </form>
+    
+            <h2>Comentarios anteriores</h2>
+            <div id="comentarios-anteriores">
+                <!-- Los comentarios se cargarán aquí -->
+            </div>
+        </section>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                function loadComments() {
+                    var xhr = new XMLHttpRequest();
+                    xhr.open('GET', 'mostrar_comentarios.php', true);
+                    xhr.onload = function() {
+                        if (xhr.status === 200) {
+                            document.getElementById('comentarios-anteriores').innerHTML = xhr.responseText;
+                        }
+                    };
+                    xhr.send();
+                }
+            
+                loadComments(); // Carga comentarios al iniciar
+            
+                document.getElementById('comentario-form').addEventListener('submit', function(event) {
+                    event.preventDefault();
+                    var formData = new FormData(this);
+                    var xhr = new XMLHttpRequest();
+                    xhr.open('POST', 'guardar_comentario.php', true);
+                    xhr.onload = function() {
+                        if (xhr.status === 200) {
+                            loadComments(); // Actualiza comentarios después de enviar
+                            document.getElementById('comentario-form').reset(); // Limpia el formulario
+                        }
+                    };
+                    xhr.send(formData);
+                });
+            });
+            </script>
+            
+    </main>
+    <footer>
+        <div class="background-image"></div>
+        <div class="background-text">GRACIAS POR TU PREFERENCIA SOMOS "LIBRO-VERSE".</div>
+    </footer>
+</body>
+</html>

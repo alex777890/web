@@ -1,0 +1,301 @@
+/* Estilos generales */
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header-container {
+    background-color: #aed6f1;
+    border-color: #aed6f1;
+    border-style: groove;
+    border-radius: 20px;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.header-container h1 {
+    margin: 0;
+    text-align: left;
+    font-size: 3em;
+}
+
+main {
+    padding: 20px;
+}
+
+.intro {
+    display: flex;
+    align-items: center;
+    background-color: #aed6f1;
+    padding: 20px;
+    justify-content: center;
+}
+
+.intro-text {
+    flex: 1;
+    color: black;
+}
+
+.intro-text h2 {
+    font-size: 2em;
+    margin: 0;
+}
+
+.intro-image img {
+    max-width: 70%;
+    height: auto;
+}
+
+.team {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.team-member {
+    text-align: center;
+    flex: 1 1 20%;
+    margin: 10px;
+}
+
+.team-member img {
+    max-width: 100px;
+    height: auto;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+footer {
+    background-color: #aed6f1;
+    color: black;
+    text-align: center;
+    padding: 20px;
+    font-weight: bold;
+    position: relative;
+}
+
+.footer-content {
+    position: relative;
+    z-index: 1;
+}
+
+.background-text {
+    position: relative;
+    font-size: 3em;
+    font-weight: bold;
+    color: white;
+    z-index: 2;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+footer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 160%;
+    background-image: url('imagenes de pagina 1/proyecto 1.4.gif');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5;
+    z-index: 0;
+}
+
+/* Estilos y Formato de listas */
+ul, li {
+    list-style: none;
+    z-index: 5;
+}
+
+nav {
+    background-color: #aed6f1;
+    z-index: 5;
+}
+
+nav > ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+nav > ul > li {
+    position: relative;
+}
+
+nav li a {
+    background-color: rgb(22, 175, 188);
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    margin: 10px;
+    border-radius: 10px;
+    min-width: 100px;
+    text-align: center;
+    border: 3px solid black;
+}
+
+nav li a:hover {
+    background-color: #A9BBF9;
+}
+
+nav li ul {
+    display: none;
+    position: absolute;
+    background-color: rgb(22, 175, 188);
+    padding: 0;
+    margin: 0;
+    top: 100%;
+    left: 0;
+    min-width: 140px;
+    border-radius: 10px;
+}
+
+nav li:hover > ul {
+    display: block;
+}
+
+nav li ul li {
+    position: relative;
+}
+
+nav li ul li ul {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    min-width: 140px;
+}
+
+nav li ul li:hover > ul {
+    display: block;
+}
+
+nav li ul li ul li ul {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    min-width: 140px;
+}
+
+nav li ul li ul li:hover > ul {
+    display: block;
+}
+
+.team-member ul {
+    padding: 0;
+    margin: 10px 0 0 0;
+    list-style-type: none;
+}
+
+.team-member ul li {
+    margin-bottom: 5px;
+}
+
+.team-member ul li a {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #555;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.team-member ul li a:hover {
+    background-color: #777;
+}
+
+/* Formato para darle a la pagina el modo responsivo */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo-container {
+        flex-direction: column;
+    }
+
+    .logo {
+        width: 80%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    .intro {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .intro-image img {
+        max-width: 100%;
+        margin-top: 20px;
+    }
+
+    .team {
+        flex-direction: column;
+    }
+
+    .team-member {
+        flex: 1 1 100%;
+    }
+
+    nav > ul {
+        flex-direction: column;
+    }
+
+    nav li {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/*mision, vision y objetivos*/
+section {
+    margin-bottom: 2em;
+    text-align: center;
+}
+
+h2 {
+    color: #333;
+    text-align: center;
+}
+
+.formato {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 1.5em;
+    margin-bottom: 1em;
+    display: inline-block;
+    text-align: left;
+    max-width: 600px;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.formato h2 {
+    margin-top: 0;
+}
+.formato:hover {
+    transform: scale(1.05);
+    background-color: #aed6f1;
+}
